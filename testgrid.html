@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+    <title>TestGrid Template</title>
+    <style>
+        *{
+            margin: 0;padding: 0;
+        }
+    .maindiv1{
+        display: grid;
+        grid-template-columns: repeat(1,minmax(320px,1fr)) 320px;
+        grid-template-rows: 60px 450px;
+    }
+    .maindiv1a{
+        grid-column: 1/-1;
+        display: flex;
+       justify-content: space-between;
+    }
+    .grid1{
+        grid-column: 1/2;
+    }
+    .maindiv2a{
+        grid-column: 2/3;
+    }
+    .grid2{
+        grid-row: 1fr 1fr 1fr;
+    }
+    </style>
+</head>
+<body>
+    <div class="maindiv1">
+        <div class="maindiv1a">
+        <h1 class="heading">Nature</h1>
+        <h1 class="heading">&#8801;</h1>
+    </div>
+
+        <div class="grid1">
+            <img class="image" src="ab.jpg" alt="nature" />
+        </div>
+    <div class="maindiv2a">
+        <div class="grid2">
+            <img class="image" src="img1.jpg" alt="nature" />
+        </div>
+
+        <div class="grid3">
+            <img class="image" src="img2.jpg" alt="nature" />
+        </div>
+        
+        <div class="grid4">
+            <img class="image" src="img3.jpg" alt="nature" />
+        </div>
+    </div>
+        
+    </div>
+</body>
+</html>
